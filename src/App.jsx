@@ -78,8 +78,9 @@ ${FONTS}
   --kit-border: #252535; --kit-done: #3aaa6a; --kit-done2: #5acc8a;
   --kit-text: #e8eaf6; --kit-muted: #8890b0; --kit-dim: #44465a;
 }
-body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; }
-.app-shell { display: flex; flex-direction: column; height: 100vh; overflow: hidden; }
+body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; width: 100%; }
+html, body, #root { height: 100%; width: 100%; }
+.app-shell { display: flex; flex-direction: column; height: 100vh; width: 100vw; overflow: hidden; }
 .demo-bar { background: #111; border-bottom: 1px solid #1e1e1e; padding: 7px 16px; font-size: 11px; color: #555; text-align: center; flex-shrink: 0; letter-spacing: 0.5px; }
 .screen-tabs { display: flex; background: #090909; border-bottom: 1px solid #1a1a1a; flex-shrink: 0; }
 .screen-tab { flex: 1; padding: 13px 8px; border: none; background: transparent; color: #444; font-size: 12px; font-weight: 700; font-family: 'DM Sans', sans-serif; cursor: pointer; letter-spacing: 1.2px; text-transform: uppercase; border-bottom: 3px solid transparent; transition: all 0.15s; }
